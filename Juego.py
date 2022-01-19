@@ -1,4 +1,4 @@
-from msilib.schema import Font
+
 import pygame #acceder al comando de pygame
 import random
 import sys
