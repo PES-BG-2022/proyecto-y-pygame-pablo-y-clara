@@ -58,6 +58,15 @@ while not game_over:
 			if event.key == pygame.K_DOWN:
 				player2_y_speed = 0
 
+	if player1_y_coor > 500:
+		player1_y_coor = 500
+	if player1_y_coor < 0:
+		player1_y_coor = 0
+	if player2_y_coor > 500:
+		player2_y_coor = 500
+	if player2_y_coor < 0:
+		player2_y_coor = 0
+
 	if pelota_y > 590 or pelota_y < 10: #espacio dentro de la consola en donde se mueve la pelota
 		pelota_speed_y *= -1
 
